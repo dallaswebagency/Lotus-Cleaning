@@ -159,22 +159,20 @@ nav.main li:hover>.drop,nav.main li:focus-within>.drop{opacity:1;visibility:visi
 .guides{padding:110px 0}
 .guides .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:50px;flex-wrap:wrap}
 .guides h2{font-size:clamp(32px,4vw,54px);max-width:760px;margin-top:16px}
-.gg{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.gg{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .gc{display:flex;flex-direction:column;background:#fff;border-radius:6px;overflow:hidden;border:1px solid rgba(23,58,75,.12);transition:transform .25s,box-shadow .25s}
 .gc:hover{transform:translateY(-6px);box-shadow:0 26px 40px -24px rgba(15,42,55,.5)}
-.gc .th{aspect-ratio:16/10;background:var(--tile);position:relative;overflow:hidden}
-.gc .th img{width:100%;height:100%;object-fit:cover}
+.gc .th{aspect-ratio:16/9;background:var(--tile);position:relative;overflow:hidden}
+.gc .th img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gc:hover .th img{transform:scale(1.04)}
 .gc .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
-.gc h3{font-size:21px;line-height:1.2}
-.gc p{font-size:15px;color:var(--muted);flex:1}
-.gc .more{font-weight:700;color:var(--teal-d);font-size:15px;margin-top:4px}
-.gc.feat{grid-column:span 2;grid-row:span 2}
-.gc.feat .th{aspect-ratio:auto;flex:1;min-height:260px}
-.gc.feat h3{font-size:32px}
-.gc.feat p{font-size:17px;flex:none}
-.gc.text{background:var(--sage);border-color:var(--sage)}
-.gc.text .body{justify-content:flex-end}
-.gc.text p{color:var(--ink)}
+.gc h3{font-size:23px;line-height:1.2}
+.gc .more{font-weight:700;color:var(--teal-d);font-size:15px;margin-top:auto;padding-top:6px}
+.gc.text{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;gap:30px;background:var(--sage);border-color:var(--sage);padding:34px 40px}
+.gc.text .body{padding:0;flex-direction:row;align-items:center;justify-content:space-between;gap:30px;width:100%}
+.gc.text h3{font-size:clamp(26px,3vw,40px);max-width:760px}
+.gc.text p{color:var(--ink);font-size:17px;margin-top:8px}
+.gc.text .more{color:var(--ink);margin:0;padding:0;white-space:nowrap;font-size:16px}
 
 /* instagram */
 .insta{background:var(--sage);padding:70px 0}
@@ -235,6 +233,7 @@ footer{background:var(--ink-2);color:#a9bfca;padding:80px 0 0;font-size:15.5px}
   .srow{grid-template-columns:60px 1fr 56px}
   .srow .slot{display:none}
   .gg{grid-template-columns:1fr 1fr}
+  .gc.text,.gc.text .body{flex-direction:column;align-items:flex-start}
   .chips{grid-template-columns:1fr}
   .fgrid{grid-template-columns:1fr 1fr}
   .insta .right{justify-self:start}
@@ -258,7 +257,7 @@ footer{background:var(--ink-2);color:#a9bfca;padding:80px 0 0;font-size:15.5px}
   .srow .go{width:46px;height:46px}
   .srow:hover{padding-inline:0}
   .gg{grid-template-columns:1fr}
-  .gc.feat{grid-column:auto;grid-row:auto}
+  .gc.text{padding:26px 22px}
   .fgrid{grid-template-columns:1fr}
   .badge{position:relative;left:auto;bottom:auto;margin:-40px 10px 0;transform:none}
   .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;box-shadow:0 -10px 30px -10px rgba(0,0,0,.35)}
@@ -513,32 +512,44 @@ footer{background:var(--ink-2);color:#a9bfca;padding:80px 0 0;font-size:15.5px}
     </div>
 
     <div class="gg rev">
-      <a class="gc feat" href="https://lotuscleaningservices.ca/how-to-fold-a-big-rug/">
-        <div class="th"><img src="https://lotuscleaningservices.ca/wp-content/uploads/2023/10/How-To-Fold-A-Big-Rug-FI.jpg" alt="How To Fold A Big Rug" loading="lazy"></div>
-        <div class="body"><h3>How To Fold A Big Rug</h3><p>Do you need to transport a big rug in a small vehicle? In this short video we will show you how to fold it.</p><span class="more">Read More &rarr;</span></div>
-      </a>
       <a class="gc text" href="https://lotuscleaningservices.ca/how-to-treat-stains-on-rugs-a-comprehensive-guide/">
-        <div class="body" style="min-height:230px"><h3>How to Treat Stains on Rugs: A Comprehensive Guide</h3><p>Safe cleaning tips for every fibre type.</p><span class="more" style="color:var(--ink)">Read More &rarr;</span></div>
+        <div class="body"><div><h3>How to Treat Stains on Rugs: A Comprehensive Guide</h3><p>How to Treat Rug Stains: Safe Cleaning Tips for Every Fibre Type</p></div><span class="more">Read More &rarr;</span></div>
+      </a>
+      <a class="gc" href="https://lotuscleaningservices.ca/how-to-fold-a-big-rug/">
+        <div class="th"><img src="images/video-how-to-fold-a-big-rug.jpg" alt="How To Fold A Big Rug" loading="lazy"></div>
+        <div class="body"><h3>How To Fold A Big Rug</h3><span class="more">Read More &rarr;</span></div>
       </a>
       <a class="gc" href="https://lotuscleaningservices.ca/understanding-abrash/">
-        <div class="th"><img src="https://lotuscleaningservices.ca/wp-content/uploads/2022/01/RugVideos-Abrash.jpg" alt="Understanding Abrash" loading="lazy"></div>
+        <div class="th"><img src="images/video-abrash.jpg" alt="Understanding Abrash" loading="lazy"></div>
         <div class="body"><h3>Understanding Abrash</h3><span class="more">Read More &rarr;</span></div>
       </a>
       <a class="gc" href="https://lotuscleaningservices.ca/moth-and-bug-identification/">
-        <div class="th"><img src="https://lotuscleaningservices.ca/wp-content/uploads/2022/01/RugVideos-Moth-And-Bug-Identification.jpg" alt="Moth And Bug Identification" loading="lazy"></div>
+        <div class="th"><img src="images/video-moth-bug-identification.jpg" alt="Moth And Bug Identification" loading="lazy"></div>
         <div class="body"><h3>Moth And Bug Identification</h3><span class="more">Read More &rarr;</span></div>
       </a>
       <a class="gc" href="https://lotuscleaningservices.ca/moth-and-bug-protection/">
-        <div class="th"><img src="https://lotuscleaningservices.ca/wp-content/uploads/2022/01/RugVideos-Moth-And-Bug-Protection.jpg" alt="Moth And Bug Protection" loading="lazy"></div>
+        <div class="th"><img src="images/video-moth-bug-protection.jpg" alt="Moth And Bug Protection" loading="lazy"></div>
         <div class="body"><h3>Moth And Bug Protection</h3><span class="more">Read More &rarr;</span></div>
       </a>
       <a class="gc" href="https://lotuscleaningservices.ca/white-knots-in-your-rugs/">
-        <div class="th"><img src="https://lotuscleaningservices.ca/wp-content/uploads/2022/01/RugVideos-White-Knots.jpg" alt="White Knots In Your Rugs" loading="lazy"></div>
+        <div class="th"><img src="images/video-white-knots.jpg" alt="White Knots In Your Rugs" loading="lazy"></div>
         <div class="body"><h3>White Knots In Your Rugs</h3><span class="more">Read More &rarr;</span></div>
       </a>
       <a class="gc" href="https://lotuscleaningservices.ca/tea-washed-rugs/">
-        <div class="th"><img src="https://lotuscleaningservices.ca/wp-content/uploads/2022/01/RugVideos-Tea-Washed-Rugs.jpg" alt="Tea Washed Rugs" loading="lazy"></div>
+        <div class="th"><img src="images/video-tea-washed-rugs.jpg" alt="Tea Washed Rugs" loading="lazy"></div>
         <div class="body"><h3>Tea Washed Rugs</h3><span class="more">Read More &rarr;</span></div>
+      </a>
+      <a class="gc" href="https://lotuscleaningservices.ca/mistakes-rug-owners-make/">
+        <div class="th"><img src="images/video-mistakes-rug-owners-make.jpg" alt="Mistakes Rug Owners Make" loading="lazy"></div>
+        <div class="body"><h3>Mistakes Rug Owners Make</h3><span class="more">Read More &rarr;</span></div>
+      </a>
+      <a class="gc" href="https://lotuscleaningservices.ca/do-i-need-a-rug-pad/">
+        <div class="th"><img src="images/video-do-i-need-a-rug-pad.jpg" alt="Do I Need A Rug Pad?" loading="lazy"></div>
+        <div class="body"><h3>Do I Need A Rug Pad?</h3><span class="more">Read More &rarr;</span></div>
+      </a>
+      <a class="gc" href="https://lotuscleaningservices.ca/how-often-should-i-clean/">
+        <div class="th"><img src="images/video-how-often-should-i-clean.jpg" alt="How Often Should I Clean?" loading="lazy"></div>
+        <div class="body"><h3>How Often Should I Clean?</h3><span class="more">Read More &rarr;</span></div>
       </a>
     </div>
   </div>
